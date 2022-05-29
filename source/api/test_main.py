@@ -1,5 +1,5 @@
 """
-Creator: Joao Farias and Julio Freire
+Creators: Joao Farias and Julio Freire
 Date: 18 April 2022
 API testing
 """
@@ -20,7 +20,7 @@ def test_root():
     assert r.status_code == 200
 
 # a unit test that tests the status code and response 
-# for an instance with a low income
+# for an instance with a bad
 def test_get_inference_bad_wine():
 
     wine = {
@@ -43,7 +43,7 @@ def test_get_inference_bad_wine():
     assert r.json() == "This is a BAD wine"
 
 # a unit test that tests the status code and response 
-# for an instance with a high income
+# for an instance with a good
 def test_get_inference_good_wine():
 
     wine = {

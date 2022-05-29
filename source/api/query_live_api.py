@@ -1,5 +1,5 @@
 """
-Creator: Joao Farias and Julio Freire
+Creators: Joao Farias and Julio Freire
 Date: 28 May 2022
 Script that POSTS to the API using the requests 
 module and returns both the result of 

@@ -30,7 +30,7 @@ run = wandb.init(project="red_wine_quality",job_type="api")
 app = FastAPI()
 
 # declare request example data using pydantic
-# a person in our dataset has the following attributes
+# a wine in our dataset has the following attributes
 class Wine(BaseModel):
     fixed_acidity: float
     volatile_acidity: float
@@ -71,7 +71,7 @@ async def root():
         """a classification model on publicly available"""\
         """<a href="http://archive.ics.uci.edu/ml/datasets/Adult"> Census Bureau data</a>.</span></p>"""
 
-# run the model inference and use a Person data structure via POST to the API.
+# run the model inference and use a Wine data structure via POST to the API.
 @app.post("/predict")
 async def get_inference(wine: Wine):
     
