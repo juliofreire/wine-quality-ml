@@ -1,0 +1,25 @@
+{
+    "os": "Windows-10-10.0.19044-SP0",
+    "python": "3.8.13",
+    "heartbeatAt": "2022-05-29T14:05:28.498468",
+    "startedAt": "2022-05-29T14:05:25.693625",
+    "docker": null,
+    "cpu_count": 8,
+    "cuda": null,
+    "args": [
+        "source/api",
+        "-vv",
+        "-s"
+    ],
+    "state": "running",
+    "program": "-m pytest.__main__",
+    "git": {
+        "remote": "git@github.com:juliofreire/wine-quality-ml.git",
+        "commit": "d7df55d49ec85305352e9850dd313751484bcc52"
+    },
+    "email": "julio.juliofreire@gmail.com",
+    "root": "D:/wine-quality-ml",
+    "host": "ACERTMAIS-RN-51",
+    "username": "Julio.Freire",
+    "executable": "D:\\anaconda3\\envs\\colab2deploy\\python.exe"
+}

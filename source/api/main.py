@@ -21,10 +21,10 @@ setattr(sys.modules["__main__"], "FeatureSelector", FeatureSelector)
 setattr(sys.modules["__main__"], "NumericalTransformer", NumericalTransformer)
 
 # name of the model artifact
-artifact_model_name = "decision_tree/model_export:latest"
+artifact_model_name = "red_wine_quality/model_export:latest"
 
 # initiate the wandb project
-run = wandb.init(project="decision_tree",job_type="api")
+run = wandb.init(project="red_wine_quality",job_type="api")
 
 # create the api
 app = FastAPI()
@@ -49,15 +49,15 @@ class Wine(BaseModel):
             "example": {
                 "fixed_acidity": 7.2,
                 "volatile_acidity": 0.8,
-                "citric_acid": 473748,
-                "residual_sugar": 0.04,
+                "citric_acid": 0.05,
+                "residual_sugar": 2,
                 "chlorides": 0.07,
                 "free_sulfur_dioxide": 12.0,
                 "total_sulfur_dioxide": 39.0,
                 "density": 0.9977,
                 "ph": 3.78,
                 "sulphates": 0.56,
-                "alcohol": 9.3,
+                "alcohol": 9.3
             }
         }
 
@@ -73,7 +73,7 @@ async def root():
 
 # run the model inference and use a Person data structure via POST to the API.
 @app.post("/predict")
-async def get_inference(person: Person):
+async def get_inference(wine: Wine):
     
     # Download inference artifact
     model_export_path = run.use_artifact(artifact_model_name).file()
@@ -83,9 +83,9 @@ async def get_inference(person: Person):
     # note that we could use pd.DataFrame.from_dict
     # but due be only one instance, it would be necessary to
     # pass the Index.
-    df = pd.DataFrame([person.dict()])
+    df = pd.DataFrame([wine.dict()])
 
     # Predict test data
     predict = pipe.predict(df)
 
-    return "This is a BAD wine" if 0 else "This is a GOOD wine"
+    return "This is a GOOD wine" if predict[0] else "This is a BAD wine"
