@@ -35,4 +35,4 @@ jobs:
                                         
       - name: Testing API
         run:
-          pytest source/api -vv -s
+          python -m pytest source/api -vv -s
