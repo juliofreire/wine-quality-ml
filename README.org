@@ -35,6 +35,12 @@ But, before training, we had to remove the outliers from the train set, encode o
 
 Next, we performed Hyperparameter Tuning with the help of W&B sweeps. We configured the sweep to test some configurations for our training, like using min-max or z-score and using different criteria and splitters for Decision Trees. After running these different configurations, the W&B [[https://wandb.ai/ppgeec-ml-jj/red_wine_quality/sweeps/3u0enxtm/][sweep]] showed us the [[https://wandb.ai/ppgeec-ml-jj/red_wine_quality/runs/59o4c0t3/overview][best]] result (the one with the highest accuracy). This configuration model was then used as our best model. Finally, the best model and target encoder were exported to W&B and can be seen in the Artifacts page ([[https://wandb.ai/ppgeec-ml-jj/red_wine_quality/artifacts/inference_artifact/model_export/][model]] and [[https://wandb.ai/ppgeec-ml-jj/red_wine_quality/artifacts/inference_artifact/target_encoder/][encoder]]). 
 
+The confusion matrix and feature importance for the validation of the best model are shown below.
+
+<center><img width="800" src="images/confusion_matrix_best_model.pdf"></center>
+
+<center><img width="800" src="images/feature_importance_best_model.pdf"></center>
+
 ** Test
 In this [[file:source/pipeline/7-test.ipynb][seven and final]] step, we tested our model against the test set. Our final metrics were as shown below and can be seen in this W&B [[https://wandb.ai/ppgeec-ml-jj/red_wine_quality/runs/33eooynf/overview][run]].
 
@@ -45,4 +51,9 @@ In this [[file:source/pipeline/7-test.ipynb][seven and final]] step, we tested o
 29-05-2022 19:26:47 Test Recall: 0.32727272727272727
 
 29-05-2022 19:26:47 Test F1: 0.35294117647058826
+
+The confusion matrix for the test set with the best model is shown below.
+
+<center><img width="800" src="images/confusion_matrix_test.pdf"></center>
+
 
