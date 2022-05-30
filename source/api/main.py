@@ -71,7 +71,7 @@ async def root():
         """a classification model.</p></span>"""\
     """<p><span style="font-size:20px">For this step, we brought a Decision Tree as classifier model and to predict some quality of wine"""\
         """is necessary acess this link: """\
-        """<a href="https://red-wine-quality-ml.herokuapp.com/docs"> predict</a> and execute one try.</span></p>"""
+        """<a href="https://red-wine-quality-ml.herokuapp.com/docs"> predict</a> and execute one try.</span></p>"""\
     """<p><span style="font-size:20px"> Our dataset was taken from: """\
         """<a href="https://www.kaggle.com/datasets/uciml/red-wine-quality-cortez-et-al-2009"> Kaggle: Red Wine Quality</a>.</span></p>"""
 
