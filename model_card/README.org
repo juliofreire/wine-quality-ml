@@ -37,9 +37,9 @@
 - The train set can be found in our Weights & Biases project [[https://wandb.ai/ppgeec-ml-jj/red_wine_quality/artifacts/segregated_data/train.csv/][artifact]].
 
 * Quantitative Analysis
-- The confusion matrix for the best model against the validation set can be seen [[file:~/Sync/Jota/Academico/Pós-Graduação/UFRN/Doutorado/2022-1/Aprendizagem de Máquina/wine-quality-ml/images/confusion_matrix_best_model.pdf][here]].
-- The feature importante plot for the best model trained can be seen [[file:~/Sync/Jota/Academico/Pós-Graduação/UFRN/Doutorado/2022-1/Aprendizagem de Máquina/wine-quality-ml/images/feature_importance_best_model.pdf][here]].
-- The confusion matrix for the best model simulated with the test set can be seen [[file:~/Sync/Jota/Academico/Pós-Graduação/UFRN/Doutorado/2022-1/Aprendizagem de Máquina/wine-quality-ml/images/confusion_matrix_test.pdf][here]].
+- The confusion matrix for the best model against the validation set can be seen [[file:../images/confusion_matrix_best_model.pdf][here]].
+- The feature importante plot for the best model trained can be seen [[file:../images/feature_importance_best_model.pdf][here]].
+- The confusion matrix for the best model simulated with the test set can be seen [[file:../images/confusion_matrix_test.pdf][here]].
 
 * Ethical Considerations
 - The quality of a wine, although related to its physiochemical properties, are not defined only by them. Also, this trained model should not be regarded as an app to determine the quality of every wine since it only encapsules the characteristics of the red and white variants of the Portugues "Vinho Verde" wine.
