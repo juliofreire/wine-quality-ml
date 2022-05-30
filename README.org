@@ -49,3 +49,7 @@ In this [[file:source/pipeline/7-test.ipynb][seven and final]] step, we tested o
 29-05-2022 19:26:47 Test F1: 0.35294117647058826
 
 The confusion matrix for the test set with the best model can be seen [[file:images/confusion_matrix_test.pdf][here]].
+
+* References
+This project was based on a [[https://github.com/ivanovitchm/ppgeecmachinelearning/tree/main/lessons/week_02/sources][Decision Tree classifier model]] used to to predict whether individuals make less than or equal to 50k a year, or more than 50k a year using data from the [[https://archive.ics.uci.edu/ml/datasets/Adult][Census Bureau Data]]. Also, for the deployment stage of the project, we took inspiration from the [[https://github.com/ivanovitchm/colab2mlops][deployment]] of the classification model for the same dataset.
+
