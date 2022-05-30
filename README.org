@@ -1,3 +1,9 @@
-# wine-quality-ml
-This project apply ML to predict red wine quality.
-Waiting to edit...
+#+TITLE: Red Wine Quality Classifier
+#+AUTHOR: João Lucas Correia Barbosa de Farias
+#+AUTHOR: Júlio Freire
+#+EMAIL: joao.farias.080@ufrn.edu.br
+
+* Deployment of a full decision tree pipeline
+This project consists of classifying wine ratings based on the dataset xxx. Decision Trees were used to create the model. Weights & Bias was used to store the model and label encoder. Heroku was used to get the model in production using an API.
+
+
