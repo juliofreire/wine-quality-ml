@@ -68,11 +68,11 @@ async def root():
     <p><span style="font-size:28px"><strong>Hello Welcome to Red Wine Quality Predict </strong></span></p>"""\
     """<p><span style="font-size:20px">In this project, we will apply the skills """\
         """acquired through the first stage of ML course about the Deploying a Scalable ML Pipeline in Production to develop """\
-        """a classification model</p></span>"""\
-    """<p><span style="font-size:20px">For this step, we brought a Decision Tree as classifier model and to precit some quality of wine"""\
-    """is necessary acess this link: """
-    """<a href="https://red-wine-quality-ml.herokuapp.com/docs"> predict</a> and execute one try.</span></p>"""
-    """<p><span style="font-size:20px"> Our dataset was taken from: """
+        """a classification model.</p></span>"""\
+    """<p><span style="font-size:20px">For this step, we brought a Decision Tree as classifier model and to predict some quality of wine"""\
+        """is necessary acess this link: """\
+        """<a href="https://red-wine-quality-ml.herokuapp.com/docs"> predict</a> and execute one try.</span></p>"""
+    """<p><span style="font-size:20px"> Our dataset was taken from: """\
         """<a href="https://www.kaggle.com/datasets/uciml/red-wine-quality-cortez-et-al-2009"> Kaggle: Red Wine Quality</a>.</span></p>"""
 
 # run the model inference and use a Wine data structure via POST to the API.

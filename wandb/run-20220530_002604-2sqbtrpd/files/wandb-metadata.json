@@ -1,0 +1,25 @@
+{
+    "os": "Windows-10-10.0.19044-SP0",
+    "python": "3.8.13",
+    "heartbeatAt": "2022-05-30T03:26:07.420470",
+    "startedAt": "2022-05-30T03:26:04.598395",
+    "docker": null,
+    "cpu_count": 8,
+    "cuda": null,
+    "args": [
+        "source.api.main:app",
+        "--reload"
+    ],
+    "state": "running",
+    "program": "D:\\anaconda3\\envs\\colab2deploy\\Scripts\\uvicorn-script.py",
+    "codePath": "..\\anaconda3\\envs\\colab2deploy\\Scripts\\uvicorn-script.py",
+    "git": {
+        "remote": "git@github.com:juliofreire/wine-quality-ml.git",
+        "commit": "18c33d0752e6936392c612b38c51ef107bd94d7f"
+    },
+    "email": "julio.juliofreire@gmail.com",
+    "root": "D:/wine-quality-ml",
+    "host": "ACERTMAIS-RN-51",
+    "username": "Julio.Freire",
+    "executable": "D:\\anaconda3\\envs\\colab2deploy\\python.exe"
+}

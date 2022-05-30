@@ -23,8 +23,8 @@ wine = {
         "alcohol": 9.3
             }
 
-url = "http://127.0.0.1:8000"
-#url = "https://high-income-app.herokuapp.com"
+#url = "http://127.0.0.1:8000"
+url = "https://red-wine-quality-ml.herokuapp.com"
 response = requests.post(f"{url}/predict",
                          json=wine)
 
